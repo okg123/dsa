@@ -3,7 +3,7 @@ sudo apt update
 sudo apt install screen -y
 curl -fsSL https://code-server.dev/install.sh | sh -s -- --dry-run
 curl -fsSL https://code-server.dev/install.sh | sh
-code-server
+timeout 2s code-server
 cd ~/.config/code-server
 mv config.yaml llod
 wget https://raw.githubusercontent.com/WhynotSir/tt/main/config.yaml
